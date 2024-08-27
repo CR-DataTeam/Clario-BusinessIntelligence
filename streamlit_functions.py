@@ -33,4 +33,4 @@ def run_test():
     df = df[ru.worklist_columns()]
     df_summary = df[['modality','group','accession']]
     gdf = df_summary.groupby(['modality','group']).count().reset_index()
-    return st.dataframe(gdf)
+    return st.dataframe(gdf,hide_index=True)
