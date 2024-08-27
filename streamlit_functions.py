@@ -30,4 +30,6 @@ def run_test():
     df = pd.DataFrame(response_json)['result'][0]
     stats = df['title']
     df = pd.DataFrame(df['data'])
-    return st.dataframe(df[ru.worklist_columns()])
+    df = df[ru.worklist_columns()]
+    gdf = df.groupby(['modality','group'])
+    return st.dataframe(gdf)
