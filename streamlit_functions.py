@@ -31,5 +31,6 @@ def run_test():
     stats = df['title']
     df = pd.DataFrame(df['data'])
     df = df[ru.worklist_columns()]
-    gdf = df.groupby(['modality','group']).count().reset_index()
+    df_summary = df[['modality','group','accession']]
+    gdf = df_summary.groupby(['modality','group']).count().reset_index()
     return st.dataframe(gdf)
