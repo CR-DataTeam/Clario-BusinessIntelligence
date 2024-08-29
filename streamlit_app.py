@@ -5,7 +5,7 @@ import streamlit_functions as sf
 import hmac
 import streamlit as st
 
-
+"""
 def check_password():
     """Returns `True` if the user had the correct password."""
 
@@ -36,9 +36,9 @@ if not check_password():
 # Main Streamlit app starts here
 st.write("Here goes your normal Streamlit app...")
 st.button("Click me")
+"""
 
-
-st.title("Clario 🩺")
+st.title("Resource Allocation 🩺")
 st.write(
     "Click button below to query current worklist status:"
 )
