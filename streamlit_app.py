@@ -4,7 +4,7 @@ import streamlit_functions as sf
 
 import hmac
 import streamlit as st
-
+st. set_page_config(layout="wide")
 st.title("Resource Allocation 🩺")
 st.write(
     "Click button below to query current worklist status:"
