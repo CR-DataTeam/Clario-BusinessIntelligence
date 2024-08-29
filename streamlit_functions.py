@@ -28,7 +28,7 @@ def run_test():
     response_json = report_response.json()
 
     df = pd.DataFrame(response_json)['result'][0]
-    stats = df['title']
+    # stats = df['title']
     df = pd.DataFrame(df['data'])
     df = df[ru.worklist_columns()]
     df_summary = df[['modality','group','accession']]
