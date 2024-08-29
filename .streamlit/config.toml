@@ -3,4 +3,4 @@ base = "dark"
 primaryColor = "blue"
 
 [client]
-toolbarMode = "viewer"
+toolbarMode = "minimal"
