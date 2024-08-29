@@ -38,7 +38,6 @@ st.write("Here goes your normal Streamlit app...")
 st.button("Click me")
 
 
-
 st.title("Clario 🩺")
 st.write(
     "Click button below to query current worklist status:"
